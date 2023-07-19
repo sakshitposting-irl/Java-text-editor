@@ -34,7 +34,7 @@ import javax.swing.text.BadLocationException;
 /*
 Text Editor in Java using Swing and Event Handling
 */
-public class TextProEdit implements ActionListener
+public class TextProEditor implements ActionListener
 {
     JComboBox fonts;
     JTextArea textArea;JMenuItem Exit,Cut,Copy,Paste,Save,Open,Find,Replace,AboutUs;
@@ -46,12 +46,12 @@ public class TextProEdit implements ActionListener
     JTextField FindField,ReplaceField;
     JButton FindNext,ReplaceNext,FindAll,ReplaceAll,LA,RA,CA,JA,Count;int currentPosition;
 
-    TextProEdit()
+    TextProEditor()
     {
 
         IsBold=false;
 
-        f=new JFrame("TextProEdit");
+        f=new JFrame("TextProEditor");
         p1=new JPanel();
         p1.setBorder(BorderFactory.createLineBorder(Color.black));
         p1.setSize(2080,1190);
@@ -471,7 +471,7 @@ public class TextProEdit implements ActionListener
     }
     public static void main(String args[])
     {
-        new TextProEdit();
+        new TextProEditor();
     }
 
 }
